@@ -160,6 +160,47 @@
         color: var(--white);
     }
 
+    /* diagram */
+    .roam-block div[style*="padding: 10px; flex: 1 0"] {
+        background-color: var(--grey);
+        color: var(--white);
+    }
+    .roam-block div[style*="background-color: white"], button {
+        background-color: var(--grey)!important;
+        border: 1px var(--dark-grey) solid!important;
+        margin: 5px;
+    }
+    .roam-block svg[style*="background-color"] {
+        background-color: var(--dark-grey)!important;
+        border: none!important;
+    }
+    .roam-block rect {
+        fill: var(--grey);
+        stroke: var(--steel-grey);
+    }
+
+    /* astrolobe */
+    .loading-astrolabe .background, .loading-astrolabe .wand {
+        filter: invert(100%);
+    }
+
+    /* query */
+    .rm-query-title {
+        background-color: var(--dark-grey)!important;
+        color: var(--green)!important;
+    }
+    .rm-query {
+        border: 1px solid var(--steel-grey);
+    }
+
+    /* encrypt */
+    .rm-encrypted-block, .rm-encrypted-block input {
+        background-color: var(--dark-grey);
+    }
+    .rm-encrypted-block input {
+        border: none;
+        padding: 3px;
+    }
 /* end main elements*/
 
 /* top bar */
