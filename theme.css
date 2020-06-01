@@ -29,6 +29,9 @@
     .simple-bullet-inner {
         background-color: var(--light-grey)!important;
     }
+    .roam-bullet-closed {
+        background-color: var(--steel-grey)!important;
+    }
     /* helper border colour */
     .block-border-left {
         border-color: var(--steel-grey);
