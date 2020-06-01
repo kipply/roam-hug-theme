@@ -9,6 +9,7 @@
     --purple: #B990F4;
     --pink: #FF79C6;
     --green: #87FFA6;
+    --dark-green: #32C95B;
     --orange: #FFC457;
 }
 
@@ -57,9 +58,13 @@
         background: var(--dark-grey);
         border: 1px solid var(--black);
     }
+    /* block reference */
+    .roam-block-container, .rm-embed-container {
+        background-color: var(--grey);
+    }
     /* bottom references */
     .rm-reference-item {
-        background-color: var(--dark-grey)!important;
+        background-color: var(--grey)!important;
         border-radius: 2px;
     }
     .rm-page-ref.rm-page-ref-link-color, .rm-page-ref:hover {
@@ -72,7 +77,13 @@
     .dont-unfocus-block[style*="background-color"] {
         background-color: var(--dark-grey)!important;
     }
-
+    /* checkbox */
+    .check-container input:checked ~ .checkmark {
+        background-color: var(--dark-green);
+    }
+    .block-ref-count-button {
+        color: var(--white)!important;
+    }
 
     /* multiline code blocks */
     .CodeMirror {
@@ -104,24 +115,48 @@
     .kanban-column {
         background-color: var(--grey);
     }
+    .kanban-column[style*="background-color"] {
+        background-color: var(--dark-grey)!important;
+        border: 1px solid var(--steel-grey);
+    }
     .kanban-card {
         background-color: var(--grey);
         border: 1px solid #44475a;
     }
 
-    /* pomodoro */
-    .dont-focus-block.bp3-button {
+    /* buttons */
+    .dont-focus-block.bp3-button, .dont-unfocus-block .bp3-button {
         background-color: var(--grey)!important;
         border: 0.5px solid var(--steel-grey)!important;
         background-image: none!important;
         color: var(--light-grey)!important;
     }
 
-    .dont-focus-block.bp3-button:hover {
+    .dont-focus-block.bp3-button:hover, .dont-unfocus-block .bp3-button:hover {
         background-color: var(--dark-grey)!important;
         background-image: none!important;
         color: var(--light-grey)!important;
     }
+
+    /* slider */
+    .bp3-slider-progress.bp3-intent-primary {
+        background-color: var(--blue);
+    }
+
+    /* date picker */
+    .bp3-datepicker {
+        background-color: var(--grey);
+        color: var(--white);
+    }
+    .bp3-html-select.bp3-minimal select, .bp3-html-select.bp3-minimal select:hover {
+        color: var(--white);
+        background-color: var(--grey);
+    }
+    .bp3-datepicker-day-wrapper:hover {
+        background-color: var(--dark-grey);
+        color: var(--white);
+    }
+
 /* end main elements*/
 
 /* top bar */
@@ -193,7 +228,7 @@
     }
 /* end split right view */
 
-/* search bar */
+/* search */
     .rm-search-title {
         color: var(--white)!important;
     }
@@ -205,7 +240,12 @@
     .rm-menu-item[style*="background-color"] {
         background-color: var(--grey)!important;
     }
-/* end search bar */
+
+    .bp3-input:focus {
+        box-shadow: none;
+        border: 1px solid var(--blue);
+    }
+/* end search */
 
 
 /* misc styles*/
