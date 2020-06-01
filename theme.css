@@ -328,3 +328,8 @@
     background-image: none!important;
     color: var(--light-grey)!important;
 }
+
+/* random mask ugh */
+.rm-zoom-mask {
+    background-color: var(--dark-grey)
+}
