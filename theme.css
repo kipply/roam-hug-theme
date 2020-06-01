@@ -5,13 +5,14 @@
     --steel-grey: #44475a;
     --light-grey: #E4E4E4;
     --white: #F6F6F6;
-    --blue: #8BE9FD;
-    --purple: #B990F4;
     --pink: #FF79C6;
+    --orange: #FFC457;
     --green: #87FFA6;
     --dark-green: #32C95B;
-    --orange: #FFC457;
+    --blue: #8BE9FD;
+    --purple: #B990F4;
 }
+
 
 /* main elements */
     body {
@@ -68,7 +69,6 @@
     /* bottom references */
     .rm-reference-item {
         background-color: var(--grey)!important;
-        border-radius: 2px;
     }
     .rm-page-ref.rm-page-ref-link-color, .rm-page-ref:hover {
         color: var(--pink);
@@ -134,11 +134,17 @@
         background-image: none!important;
         color: var(--light-grey)!important;
     }
-
     .dont-focus-block.bp3-button:hover, .dont-unfocus-block .bp3-button:hover {
         background-color: var(--dark-grey)!important;
         background-image: none!important;
         color: var(--light-grey)!important;
+    }
+    .bp3-minimal.bp3-button {
+        color: var(--light-grey);
+    }
+    .bp3-minimal.bp3-button:hover {
+        color: var(--light-grey);
+        background-color: var(--dark-grey)!important;
     }
 
     /* slider */
@@ -165,16 +171,17 @@
         background-color: var(--grey);
         color: var(--white);
     }
-    .roam-block div[style*="background-color: white"], button {
+    .roam-block div[style*="background-color: white"], .roam-block button {
         background-color: var(--grey)!important;
         border: 1px var(--dark-grey) solid!important;
         margin: 5px;
     }
-    .roam-block svg[style*="background-color"] {
+    .roam-block svg[style*="background-color"], .roam-center svg[style*="background-color: rgb(86, 112, 134);"] {
         background-color: var(--dark-grey)!important;
         border: none!important;
     }
-    .roam-block rect {
+
+    .roam-block rect, .roam-center rect{
         fill: var(--grey);
         stroke: var(--steel-grey);
     }
@@ -200,6 +207,18 @@
     .rm-encrypted-block input {
         border: none;
         padding: 3px;
+    }
+
+    /* alias */
+    span[style*="background-color: rgb(235, 241, 245); border-radius: 4px; cursor: alias; color: rgb(245, 86, 86); padding: 4px 6px;"] {
+        color: var(--pink)!important;
+        background-color: var(--grey)!important;
+        border: 1px solid var(--dark-grey);
+    }
+
+    /* youtube */
+    iframe[src*=youtube] {
+        border: 2px solid var(--dark-grey);
     }
 /* end main elements*/
 
@@ -321,15 +340,17 @@
     background-color: var(--steel-grey)!important;
 }
 
+/* random mask ugh */
+.rm-zoom-mask {
+    background-color: var(--dark-grey)
+}
+
+
 /* general catcher for white bg */
-[style*="background-color: rgb(235, 241, 245);"] {
+[style*="background-color: white; border:"]  {
     background-color: var(--grey)!important;
     border: 0.5px solid var(--steel-grey)!important;
     background-image: none!important;
     color: var(--light-grey)!important;
 }
 
-/* random mask ugh */
-.rm-zoom-mask {
-    background-color: var(--dark-grey)
-}
