@@ -1,260 +1,238 @@
-@media (prefers-color-scheme: dark) {
-    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
-        padding: 8px 20px;
-        cursor: pointer;
-        font-size: 16px;
-        color: #8be9fd;
-    }
+:root {
+    --black: #020202;
+    --dark-grey: #121212;
+    --grey: #1E1E1E;
+    --steel-grey: #44475a;
+    --light-grey: #E4E4E4;
+    --white: #F6F6F6;
+    --blue: #8BE9FD;
+    --purple: #B990F4;
+    --pink: #FF79C6;
+    --green: #87FFA6;
+    --orange: #FFC457;
+}
 
-
-    /* Background color for the rest of body */
+/* main elements */
     body {
-        background-color: #1e1e1e;
+        background-color: var(--grey);
     }
-
-    /* Header - Note title */
+    /* Note title */
     .roam-app h1 {
-        color: #b990f4 !important;
+        color: var(--purple) !important;
     }
-
-    /* primary text colour */
+    /* Writing text colour */
     .roam-app {
-        color: #f6f6f6 !important;
+        color: var(--white) !important;
     }
-    
+    /* Bullet colour */
     .simple-bullet-inner {
-        background-color: #e4e4e4!important;
+        background-color: var(--light-grey)!important;
     }
-
-    
-    .bp3-intent-success {
-        color: #87ffa6!important;
-    }
-    
-    .rm-pages-row-highlight {
-        background-color: #121212;
-    }
-    .rm-pages-row[style*="background-color"] {
-        background-color: #020202!important;
-    }
-    
-    a[style*="black"] {
-        color: #f6f6f6!important;
-    }
-    /*topbar*/
-    .roam-topbar {
-        background-color: #1e1e1e;
-    }
-    
-    .bp3-input {
-        background-color: #121212;
-        color: #e4e4e4;
-    }
-    
-    .rm-saving-icon .rm-synced {
-        background-color: #87ffa6;
-    }
-    .rm-saving-icon .rm-saving-remote {
-        background-color: #ffc457!important;
-    }
-    
+    /* helper border colour */
     .block-border-left {
-        border-color: #6272a4;
+        border-color: var(--steel-grey);
     }
-    
-    .dont-focus-block.bp3-button {
-        background-color: #1e1e1e!important;
-        border: 0.5px solid #6272a4!important;
-        background-image: none!important;
-        color: #e4e4e4!important;
-    }
-
-    .dont-focus-block.bp3-button:hover {
-        background-color: #121212!important;
-        background-image: none!important;
-        color: #e4e4e4!important;
-    }
-    
-    [style*="background-color: yellow"] {
-        background-color: #6272a4!important;
-    }
-
-    .roam-body .roam-app .roam-sidebar-container {
-        background-color: #121212;
-        color: #ff79c6;
-    }
-    
-    .log-button{
-        color: #b990f4!important;
-    }
-    
-    .log-button:hover {
-        background-color: #1e1e1e!important;
-        color: #b990f4!important
-    }
-
-    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
-        color: #ff79c6;
-    }
-
-    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
-        color: #ff79c6 !important;
-    }
-
-    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
-        background-color: #1e1e1e;
-        color: #ff79c6
-    }
-
-    #right-sidebar {
-        border-left: 1px dashed #6272a4;
-        padding-left: 5px;
-        background-color: #1e1e1e !important;
-    }
-
-    #right-sidebar .flex-h-box .bp3-button .bp3-minimal .bp3-small {
-        color: #b990f4;
-    }
-
-    .roam-log-container .roam-log-page {
-        border-top: 1px solid #292929;
-    }
-
+    /* hashtag colour */
     .rm-page-ref-tag {
-        color: #87ffa6 !important;
-
+        color: var(--green) !important;
     }
-
+    /* block references */
     .rm-block-ref {
-        border-bottom: 1px dashed #6272a4;
+        border-bottom: 1px dashed var(--steel-grey);
     }
-
     .rm-block-ref:hover {
-        background: #121212;
+        background: var(--dark-grey);
     }
-
-    .block-ref-count-button {
-        color: #6272a4!important;
-    }
-    
+    /* block selection highlight */
     .block-highlight-blue {
-        background-color: #44475a;
+        background-color: var(--steel-grey);
     }
-
+    /* links */
+    a, a:focus, a:hover {
+        color: var(--blue);
+    }
+    /* inline code */
+    code {
+        color: var(--light-grey);
+        background: var(--dark-grey);
+        border: 1px solid var(--black);
+    }
+    /* bottom references */
     .rm-reference-item {
-        background-color: #121212!important;
+        background-color: var(--dark-grey)!important;
         border-radius: 2px;
     }
-
-    .rm-page-ref.rm-page-ref-link-color {
-        color: #ff79c6;
+    .rm-page-ref.rm-page-ref-link-color, .rm-page-ref:hover {
+        color: var(--pink);
     }
-
-    .rm-page-ref:hover {
-        color: #ff79c6;
-    }
-
-    a {
-    color: #8be9fd;
-    }
-
-    a:focus {
-        color: #8be9fd;
-    }
-
-    a:hover {
-        color: #8be9fd;
-    }
-
-    .rm-level2 {
-        color: #8be9fd;
-    }
-
-    .rm-level3 {
-        color: #8be9fd;
-    }
-
-    code {
-        color: #e4e4e4;
-        background: #121212;
-        border: 1px solid #020202;
-    }
-
+    /* command suggestor */
     .bp3-elevation-3 {
-        background: #1e1e1e!important;
+        background: var(--grey)!important;
     }
-
     .dont-unfocus-block[style*="background-color"] {
-        background-color: #121212!important;
-    }
-    
-    .bp3-menu {
-        background: #121212;
-    }
-    
-    .bp3-popover-content {
-        background: #121212!important;
-        color: #f6f6f6!important;
-    }
-    
-    .rm-search-title {
-        color: #f6f6f6!important;
-    }
-    
-    .rm-new-page {
-        color: #87ffa6 !important;
-    }
-    
-    .rm-menu-item[style*="background-color"] {
-        background-color: #1e1e1e!important;
-    }
-    
-
-    .bp3-popover-arrow-fill {
-        fill: #121212!important;
-    }
-    
-    .bp3-popover-content a {
-        color: #e4e4e4!important;
+        background-color: var(--dark-grey)!important;
     }
 
+
+    /* multiline code blocks */
     .CodeMirror {
-        background: #020202;
+        background: var(--black);
         color: #589cab;
     }
-
     .CodeMirror-lines {
-        color: #a0a2b6
+        color: var(--light-grey)
     }
-
     .CodeMirror-gutters {
-        background-color: #121212;
+        background-color: var(--dark-grey);
         border-right: 1px solid #112a3f;
     }
-
     .CodeMirror-activeline-background {
         background: #0D2030;
     }
-
     .cm-s-default .cm-keyword {
         color: #5393a2;
     }
-
     .cm-s-default .cm-bracket .CodeMirror-matchingbracket {
         text-decoration: #5393a2;
-        color: white !important;
+        color: var(--white) !important;
     }
 
     /* kanban */
     .kanban-board{
-        background-color: #121212;
+        background-color: var(--dark-grey);
     }
-    
     .kanban-column {
-        background-color: #1e1e1e;
-    }    
+        background-color: var(--grey);
+    }
     .kanban-card {
-        background-color: #1e1e1e;
+        background-color: var(--grey);
         border: 1px solid #44475a;
     }
+
+    /* pomodoro */
+    .dont-focus-block.bp3-button {
+        background-color: var(--grey)!important;
+        border: 0.5px solid var(--steel-grey)!important;
+        background-image: none!important;
+        color: var(--light-grey)!important;
+    }
+
+    .dont-focus-block.bp3-button:hover {
+        background-color: var(--dark-grey)!important;
+        background-image: none!important;
+        color: var(--light-grey)!important;
+    }
+/* end main elements*/
+
+/* top bar */
+    .roam-topbar {
+        background-color: var(--grey);
+    }
+
+    .rm-saving-icon .rm-synced {
+        background-color: var(--green);
+    }
+    .rm-saving-icon .rm-saving-remote {
+        background-color: var(--orange)!important;
+    }
+/* end top bar */
+
+/* all pages page */
+    .rm-pages-row-highlight {
+        background-color: var(--dark-grey);
+    }
+    .rm-pages-row[style*="background-color"] {
+        background-color: var(--black)!important;
+    }
+
+    a[style*="black"] {
+        color: var(--white)!important;
+    }
+
+    .bp3-intent-success {
+        color: var(--green)!important;
+    }
+/* end all pages page */
+
+/* sidebar */
+    .roam-body .roam-app .roam-sidebar-container {
+        background-color: var(--dark-grey);
+        color: var(--pink);
+    }
+
+    /* the three built in links */
+    .log-button{
+        color: var(--purple)!important;
+    }
+    .log-button:hover {
+        background-color: var(--grey)!important;
+        color: var(--purple)!important
+    }
+
+    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
+        color: var(--pink);
+    }
+    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+        color: var(--pink) !important;
+    }
+    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+        background-color: var(--grey);
+        color: var(--pink)
+    }
+/* end sidebar */
+
+/* split right view */
+    #right-sidebar {
+        border-left: 1px dashed var(--steel-grey);
+        padding-left: 5px;
+        background-color: var(--grey) !important;
+    }
+
+    #right-sidebar .flex-h-box .bp3-button .bp3-minimal .bp3-small {
+        color: var(--purple);
+    }
+/* end split right view */
+
+/* search bar */
+    .rm-search-title {
+        color: var(--white)!important;
+    }
+
+    .rm-new-page {
+        color: var(--green) !important;
+    }
+
+    .rm-menu-item[style*="background-color"] {
+        background-color: var(--grey)!important;
+    }
+/* end search bar */
+
+
+/* misc styles*/
+/* input fields */
+.bp3-input {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+/* menus */
+.bp3-menu {
+    background: var(--dark-grey);
+}
+
+/* pop overs */
+.bp3-popover-arrow-fill {
+    fill: var(--dark-grey)!important;
+}
+.bp3-popover-content a {
+    color: var(--light-grey)!important;
+}
+.bp3-popover-content {
+    background: var(--dark-grey)!important;
+    color: var(--white)!important;
+}
+
+/* Search highlight */
+[style*="background-color: yellow"] {
+    background-color: var(--steel-grey)!important;
 }
