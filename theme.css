@@ -320,3 +320,11 @@
 [style*="background-color: yellow"] {
     background-color: var(--steel-grey)!important;
 }
+
+/* general catcher for white bg */
+[style*="background-color: rgb(235, 241, 245);"] {
+    background-color: var(--grey)!important;
+    border: 0.5px solid var(--steel-grey)!important;
+    background-image: none!important;
+    color: var(--light-grey)!important;
+}
