@@ -87,7 +87,15 @@
     .block-ref-count-button {
         color: var(--white)!important;
     }
-
+    /* chart */
+    g circle {
+        fill: var(--green);
+    }
+    /* tweet */
+    .EmbeddedTweet {
+        background-color: var(--grey)!important;
+        color: var(--white)!important;
+    }
     /* multiline code blocks */
     .CodeMirror {
         background: var(--black);
@@ -225,6 +233,7 @@
 /* top bar */
     .roam-topbar {
         background-color: var(--grey);
+        border-bottom: 1px solid var(--steel-grey);
     }
 
     .rm-saving-icon .rm-synced {
@@ -333,24 +342,33 @@
 .bp3-popover-content {
     background: var(--dark-grey)!important;
     color: var(--white)!important;
+    padding: 2px;
 }
 
 /* Search highlight */
 [style*="background-color: yellow"] {
     background-color: var(--steel-grey)!important;
 }
-
+i
 /* random mask ugh */
 .rm-zoom-mask {
     background-color: var(--dark-grey)
 }
 
+.zoom-path-view .rm-zoom-mask {
+    background-color: var(--grey);
+}
+
 
 /* general catcher for white bg */
-[style*="background-color: white; border:"]  {
+[style*="background-color: white; border:"], select[style="background-color: white;"]  {
     background-color: var(--grey)!important;
     border: 0.5px solid var(--steel-grey)!important;
     background-image: none!important;
     color: var(--light-grey)!important;
 }
 
+/* calculator?*/
+[style="color: rgb(14, 90, 138);"] {
+    color: var(--green)!important;
+}
