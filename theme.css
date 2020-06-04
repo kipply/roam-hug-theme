@@ -89,7 +89,7 @@
     }
     /* chart */
     g circle {
-        fill: var(--green);
+        fill: var(--purple);
     }
     /* tweet */
     .EmbeddedTweet {
@@ -157,7 +157,7 @@
 
     /* slider */
     .bp3-slider-progress.bp3-intent-primary {
-        background-color: var(--blue);
+        background-color: var(--purple);
     }
 
     /* date picker */
@@ -248,16 +248,51 @@
     .rm-pages-row-highlight {
         background-color: var(--dark-grey);
     }
-    .rm-pages-row[style*="background-color"] {
-        background-color: var(--black)!important;
+    .rm-pages-row {
+        border-bottom: 1px solid var(--steel-grey)!important;
     }
 
-    a[style*="black"] {
-        color: var(--white)!important;
+    .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+        background-color: var(--black);
+        border: none;
+    }
+
+    .rm-pages-title-text {
+        color: var(--white);
     }
 
     .bp3-intent-success {
         color: var(--green)!important;
+    }
+
+    .rm-clickable-pill {
+        background-color: rgba(3, 159, 193, 0.6);
+        opacity: 1;
+    }
+
+    .rm-clickable-pill.level1-pill {
+        background-color: rgba(3, 159, 193, 0.9);
+        opacity: 1;
+    }
+
+    .rm-clickable-pill.empty-pill{
+        color: var(--white);
+        background-color: rgba(3, 159, 193, 0.3);
+        opacity: 1;
+    }
+
+    .rm-pages-row .bp3-control .bp3-control-indicator {
+        background-color: var(--light-grey);
+        opacity: 0.9;
+        background-image: none;
+    }
+
+    .rm-pages-row .bp3-control input:checked ~ .bp3-control-indicator {
+        background-color: var(--dark-green);
+    }
+
+    .bp3-control.bp3-switch:hover input:checked ~ .bp3-control-indicator, .bp3-control.bp3-switch input:checked ~ .bp3-control-indicator, .bp3-control.bp3-switch input:checked ~ .bp3-control-indicator {
+        background-color: var(--purple);
     }
 /* end all pages page */
 
@@ -322,8 +357,8 @@
 
 /* misc styles*/
 /* input fields */
-.bp3-input {
-    background-color: var(--dark-grey);
+.bp3-input, .toolbar-search-group .bp3-input {
+    background-color: var(--dark-grey)!important;
     color: var(--light-grey);
 }
 
@@ -370,5 +405,5 @@ i
 
 /* calculator?*/
 [style="color: rgb(14, 90, 138);"] {
-    color: var(--green)!important;
+    color: var(--purple)!important;
 }
