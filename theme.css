@@ -271,13 +271,19 @@
     }
 
     .rm-clickable-pill.level1-pill {
-        background-color: rgba(3, 159, 193, 0.9);
+        background-color: rgba(3, 159, 193, 0.8);
+        opacity: 1;
+    }
+
+
+    .rm-clickable-pill.level2-pill {
+        background-color: rgba(3, 159, 193, 1);
         opacity: 1;
     }
 
     .rm-clickable-pill.empty-pill{
         color: var(--white);
-        background-color: rgba(3, 159, 193, 0.3);
+        background-color: rgba(3, 159, 193, 0.4);
         opacity: 1;
     }
 
