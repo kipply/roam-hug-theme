@@ -60,11 +60,13 @@
     code {
         color: var(--light-grey);
         background: var(--dark-grey);
-        border: 1px solid var(--black);
+        border: none;
     }
     /* block reference */
     .roam-block-container, .rm-embed-container {
         background-color: var(--grey);
+        border-radius: 0;
+        border-style: dotted;
     }
     /* bottom references */
     .rm-reference-item {
@@ -249,17 +251,20 @@
         border: none;
         padding: 3px;
     }
-
     /* alias */
     span[style*="background-color: rgb(235, 241, 245); border-radius: 4px; cursor: alias; color: rgb(245, 86, 86); padding: 4px 6px;"] {
         color: var(--pink)!important;
         background-color: var(--grey)!important;
         border: 1px solid var(--dark-grey);
     }
-
     /* youtube */
     iframe[src*=youtube] {
         border: 2px solid var(--dark-grey);
+    }
+    /* highlighted */
+    .roam-highlight {
+        background-color: #ffff99;
+        color: var(--dark-grey);
     }
 /* end main elements*/
 
