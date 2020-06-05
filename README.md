@@ -9,4 +9,4 @@ Please open an issue with any requests / bugs! <3
 
 ![](https://i.imgur.com/MjvnXZh.png)
 ![](https://i.imgur.com/Sa8EBWy.png)
-![](https://i.imgur.com/8xrmTmN.png)
+![](https://i.imgur.com/cvCNyMH.png)
