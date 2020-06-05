@@ -129,7 +129,7 @@
     .cm-variable-2, .cm-number {
         color: var(--purple)!important;
     }
-    .cm-atom {
+    .cm-atom, .cm-string {
         color: var(--orange)!important;
     }
     .cm-tag {
@@ -482,7 +482,15 @@ i
     background-image: none!important;
     color: var(--light-grey)!important;
 }
-
+/* ugh another button */
+.bp3-popover-content .bp3-button:not([class*="bp3-intent-"]) {
+    background-color: var(--grey)!important;
+    background-image: none!important;
+    color: var(--white);
+}
+.bp3-popover-content .bp3-button:not([class*="bp3-intent-"]):hover {
+    border: 1px solid var(--steel-grey);
+}
 /* calculator?*/
 [style="color: rgb(14, 90, 138);"] {
     color: var(--purple)!important;
